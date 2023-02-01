@@ -88,7 +88,7 @@
 </div>
 {{-- Section Hitung Pengaduan --}}
 <div class="pengaduan mt-5">
-    <div class="bg-purple">
+    <div class="bg-purple" >
         <div class="text-center">
             <h5 class="medium text-white mt-3">JUMLAH LAPORAN SEKARANG</h5>
             <h2 class="medium text-white">10</h2>

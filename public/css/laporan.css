@@ -33,7 +33,7 @@ body {
 }
 
 .tab:hover {
-    color: #6a70fc;
+    color: #645CBB;
     text-decoration: none;
     font-weight: 300;
     padding: 0px 6px 10px 6px;
@@ -43,7 +43,7 @@ body {
 .tab-active {
     font-size: 20px;
     border-bottom: 2px solid #6a70fc;
-    color: #6a70fc;
+    color: #645CBB;
     padding-bottom: 10px;
 }
 
@@ -73,7 +73,7 @@ hr {
 .laporan-mid .judul-laporan {
     font-size: 500;
     font-size: 18px;
-    color: #6a70fc;
+    color: #645CBB;
     margin-top: 24px;
 }
 
