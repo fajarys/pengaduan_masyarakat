@@ -11,10 +11,10 @@
 {{-- Section Header --}}
 <section class="header">
     <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
-        <div class="container">
-            <div class="container-fluid">
+      <div class="container">
+          <div class="container-fluid">
                 <a class="navbar-brand" href="{{ route('pekat.index') }}">
-                    <p class="italic mt-0 text-white">Pengaduan Masyarakat</p>
+                    <h3 class="mt-0 text-white">Pengaduan Masyarakat</h3>
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -49,8 +49,9 @@
 
 </section>
 {{-- Section Card --}}
+
 <div class="container">
-    <div class="row justify-content-between">
+    <div class="row justify-content-center">
         <div class="col-lg-8 col-md-12 col-sm-12 col-12 col">
             <div class="content content-top shadow">
                 @if ($errors->any())

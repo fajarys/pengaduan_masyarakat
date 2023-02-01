@@ -13,7 +13,7 @@
         <div class="container">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">
-                    <p class="italic mt-0 text-white">Pengaduan Masyarakat</p>
+                    <h6 class="mt-3 text-white">Pengaduan Masyarakat</h6>
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -107,8 +107,12 @@
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-body">
-                <h3 class="mt-3">Masuk terlebih dahulu</h3>
-                <p>Silahkan masuk menggunakan akun yang sudah didaftarkan.</p>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+                <h3 class="mt-3 text-center">Masuk terlebih dahulu</h3>
+                <p class="text-center">Silahkan masuk menggunakan akun yang sudah didaftarkan.</p>
+             
                 <form action="{{ route('pekat.login') }}" method="POST">
                     @csrf
                     <div class="form-group">
@@ -119,7 +123,7 @@
                         <label for="password">Password</label>
                         <input type="password" name="password" id="password" class="form-control">
                     </div>
-                    <button type="submit" class="btn btn-purple text-white mt-3" style="width: 100%">MASUK</button>
+                    <button type="submit" class="btn btn-purple text-white mb-3" style="width: 100%">MASUK</button>
                 </form>
                 @if (Session::has('pesan'))
                 <div class="alert alert-danger mt-2">
