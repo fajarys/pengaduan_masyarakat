@@ -11,6 +11,8 @@
     @yield('css')
 
     <title>@yield('title')</title>
+
+    <link rel="website icon" type="png" href="{{ asset('images/laporan.png') }}">
 </head>
 
 <body>

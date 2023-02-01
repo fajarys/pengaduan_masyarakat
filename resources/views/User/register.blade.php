@@ -21,10 +21,10 @@
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-lg-5">
-            <P class="text-center text-white mb-5">Pengaduan Masyarakat</P>
+            <h4 class="text-center text-white mt-5">Pengaduan Masyarakat</h4>
             <div class="card mt-5">
                 <div class="card-body">
-                    <h2 class="text-center mb-5">FORM DAFTAR</h2>
+                    <h3 class="text-center mb-3">FORM DAFTAR</h3>
                     <form action="{{ route('pekat.register') }}" method="POST">
                         @csrf
                         <div class="form-group">
