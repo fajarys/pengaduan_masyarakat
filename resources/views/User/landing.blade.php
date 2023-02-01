@@ -99,7 +99,7 @@
 <div class="mt-5">
     <hr>
     <div class="text-center">
-        <p class="italic text-secondary">© 2021 Ihsanfrr • All rights reserved</p>
+        <p class="italic text-secondary">© Bootsrap Copyrigth• All rights reserved</p>
     </div>
 </div>
 {{-- Modal --}}
