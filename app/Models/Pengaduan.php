@@ -19,4 +19,11 @@ class Pengaduan extends Model
         'foto',
         'status'
     ];
+
+    protected $dates = ['tgl_pengaduan'];
+
+    public function user()
+    {
+        return $this->hasOne(Masyarakat::class, 'nik', 'nik');
+    }
 }

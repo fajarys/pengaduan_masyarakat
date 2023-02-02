@@ -71,7 +71,7 @@ return [
 
         'masyarakats' => [
             'driver' => 'eloquent',
-            'model' => App\Models\Masyarakat::class,
+            'model' => \App\Models\Masyarakat::class,
         ],
 
         // 'users' => [
