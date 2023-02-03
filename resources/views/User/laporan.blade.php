@@ -14,7 +14,7 @@
       <div class="container">
           <div class="container-fluid">
                 <a class="navbar-brand" href="{{ route('pekat.index') }}">
-                    <h3 class="mt-0 text-white">Pengaduan Masyarakat</h3>
+                    <h5 class="mt-2 text-white">Pengaduan Masyarakat</h5>
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -70,7 +70,7 @@
                             rows="4">{{ old('isi_laporan') }}</textarea>
                     </div>
                     <div class="form-group">
-                        <input type="file" name="foto" class="form-control">
+                        <input type="file" name="foto" class="form-control-file">
                     </div>
                     <button type="submit" class="btn btn-custom mt-2">Kirim</button>
                 </form>
@@ -82,7 +82,7 @@
                     <img src="{{ asset('images/user_default.svg') }}" alt="user profile" class="photo">
                     <div class="self-align">
                         <h5><a style="color: #6a70fc" href="#">{{ Auth::guard('masyarakat')->user()->nama }}</a></h5>
-                        <p class="text-dark">{{ Auth::guard('masyarakat')->user()->username }}</p>
+                        <p class="text-dark mt-2">{{ Auth::guard('masyarakat')->user()->username }}</p>
                     </div>
                     <div class="row text-center">
                         <div class="col">
@@ -143,7 +143,7 @@
                 <div class="judul-laporan">
                     {{ $v->judul_laporan }}
                 </div>
-                <p>{{ $v->isi_laporan }}</p>
+                <p class="text-capitalize font-weight-normal">{{ $v->isi_laporan }}</p>
             </div>
             <div class="laporan-bottom">
                 @if ($v->foto != null)
