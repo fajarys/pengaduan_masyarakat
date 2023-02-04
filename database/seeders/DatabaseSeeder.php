@@ -3,6 +3,7 @@
 namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\Hash;
 
 class DatabaseSeeder extends Seeder
 {
@@ -13,6 +14,12 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        // \App\Models\User::factory(10)->create();
+        \App\Models\Petugas::create([
+            'nama_petugas' => 'Adminstrator',
+            'username' => 'admins',
+            'password' => Hash::make('admin123'),
+            'telp' => '0877656543',
+            'level' => 'admin',
+        ]);
     }
 }

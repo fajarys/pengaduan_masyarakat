@@ -31,7 +31,7 @@
             <div class="card mt-5">
                 <div class="card-body">
                     <h3 class="text-center mb-3">Login Petugas</h3>
-                    <form action="" method="POST">
+                    <form action="{{ route('admin.login') }}" method="POST">
                         @csrf
                         <div class="form-group">
                             <input type="text" name="username" placeholder="Username" class="form-control">
