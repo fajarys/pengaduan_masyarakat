@@ -22,10 +22,10 @@
     <div class="wrapper">
         <nav id="sidebar">
             <div class="sidebar-header">
-              <h5 class="mb-0">Pengaduan Masyarakat</h5>
+              <h5 class="mb-0 text-center">Pengaduan Masyarakat</h5>
             </div>
 
-            <ul class="list-unstyled components">
+            <ul class="list-unstyled components text-center">
                 <li class="{{ Request::is('admin/dashboard') ? 'active' : '' }}">
                     <a href="{{ route('dashboard.index') }}">Dashboard</a>
                 </li>
