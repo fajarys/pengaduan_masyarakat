@@ -13,7 +13,6 @@ class Tanggapan extends Model
 
     protected $primaryKey = 'id_tanggapan';
 
-
     protected $fillable = [
         'id_pengaduan',
         'tgl_tanggapan',

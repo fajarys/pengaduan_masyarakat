@@ -13,7 +13,7 @@ class CreateTanggapansTable extends Migration
      */
     public function up()
     {
-        Schema::create('tanggapans', function (Blueprint $table) {
+        Schema::create('tanggapan', function (Blueprint $table) {
             $table->id('id_tanggapan');
             $table->unsignedBigInteger('id_pengaduan');
             $table->dateTime('tgl_tanggapan');
@@ -36,6 +36,6 @@ class CreateTanggapansTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('tanggapans');
+        Schema::dropIfExists('tanggapan');
     }
 }
