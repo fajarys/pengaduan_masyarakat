@@ -31,7 +31,7 @@
                 @elseif ($val->status == 'proses')
                   <a href="#" class="badge badge-warning">Proses</a>
                 @else
-                  <a href="" class="badge badge-succes">Selesai</a>
+                  <a href="" class="badge badge-success">Selesai</a>
                 @endif
               </td>
               <td><a href="{{ route('pengaduan.show' , $val->id_pengaduan ) }}" style="text-decoration: underline;">Lihat</a></td>
