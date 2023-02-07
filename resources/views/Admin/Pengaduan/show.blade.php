@@ -1,12 +1,11 @@
 @extends('layouts.admin')
 
-@section('title','Pengaduan')
+@section('title','Lihat Pengaduan')
     
-@section('header' , 'Data Pengaduan')
-
 @section('header')
-    <a href="{{ route('pengaduan.index')}}" class="text-primary">Data Pengdauan</a>
-    <a href="#" class="text-decoration-none"></a>
+<a href="{{ route('pengaduan.index')}}" class="text-primary">Data Pengdauan</a>
+<a href="#" class="text-decoration-none">/</a>
+<a href="#" class="text-decoration-none">Lihat Pengaduan</a>
 @endsection
 
 @section('content')

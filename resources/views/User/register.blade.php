@@ -3,11 +3,11 @@
 @section('css')
 <style>
     body {
-        background: #645CBB;
+        background: #38E54D;
     }
 
-    .btn-purple {
-        background: #645CBB;
+    .btn-blue {
+        background: #2192FF;
         width: 100%;
         color: #fff;
     }
@@ -42,7 +42,7 @@
                         <div class="form-group">
                             <input type="number" name="telp" placeholder="No. Telp" class="form-control">
                         </div>
-                        <button type="submit" class="btn btn-purple">REGISTER</button>
+                        <button type="submit" class="btn btn-blue">REGISTER</button>
                     </form>
                 </div>
             </div>
