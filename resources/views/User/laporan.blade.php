@@ -140,9 +140,6 @@
                 </div>
             </div>
             <div class="laporan-mid">
-                <div class="judul-laporan">
-                    {{ $v->judul_laporan }}
-                </div>
                 <p class="text-capitalize font-weight-normal">{{ $v->isi_laporan }}</p>
             </div>
             <div class="laporan-bottom">
@@ -150,9 +147,7 @@
                 <img src="{{ Storage::url($v->foto) }}" alt="{{ 'Gambar '.$v->judul_laporan }}" class="gambar-lampiran">
                 @endif
                 @if ($v->tanggapan != null)
-                <div class="judul-laporan">
                   <p class="mt-3 mb-1 font-weight-bold">{{ 'Tanggapan dari : '. $v->tanggapan->petugas->nama_petugas }}</p>
-                </div>
                 <p class="light">{{ $v->tanggapan->tanggapan }}</p>
                 @endif
             </div>

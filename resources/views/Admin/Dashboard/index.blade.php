@@ -7,7 +7,7 @@
 @section('content')
     <div class="row">
       <div class="col-md-3">
-        <div class="card">
+        <div class="card bg-info text-white">
           <div class="card-header text-center">Petugas</div>
           <div class="card-body">
             <div class="text-center">
@@ -17,7 +17,7 @@
         </div>
       </div>
       <div class="col-md-3">
-        <div class="card">
+        <div class="card bg-info text-white">
           <div class="card-header text-center">Masyarakat</div>
           <div class="card-body">
             <div class="text-center">
@@ -27,8 +27,8 @@
         </div>
       </div>
       <div class="col-md-3">
-        <div class="card">
-          <div class="card-header text-center">Proses</div>
+        <div class="card bg-danger text-white">
+          <div class="card-header text-center ">Proses</div>
           <div class="card-body">
             <div class="text-center">
               {{ $proses }}
@@ -37,8 +37,8 @@
         </div>
       </div>
       <div class="col-md-3">
-        <div class="card">
-          <div class="card-header text-center">Selesai</div>
+        <div class="card bg-success text-white">
+          <div class="card-header text-center ">Selesai</div>
           <div class="card-body">
             <div class="text-center">
               {{ $selesai }}

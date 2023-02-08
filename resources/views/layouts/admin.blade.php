@@ -26,21 +26,30 @@
             </div>
 
             <ul class="list-unstyled components text-center">
-                <li class="{{ Request::is('admin/dashboard') ? 'active' : '' }}">
-                    <a href="{{ route('dashboard.index') }}">Dashboard</a>
-                </li>
-                <li class="{{ Request::is('admin/pengaduan') ? 'active' : '' }}">
-                    <a href="{{ route('pengaduan.index') }}">Pengaduan</a>
-                </li>
-                <li class="{{ Request::is('admin/petugas') ? 'active' : '' }}">
-                    <a href="{{ route('petugas.index') }}">Petugas</a>
-                </li>
-                <li class="{{ Request::is('admin/masyarakat') ? 'active' : '' }}">
-                    <a href="{{ route('masyarakat.index') }}">Masyarakat</a>
-                </li>
-                <li class="{{ Request::is('admin/laporan') ? 'active' : '' }}">
-                    <a href="{{ route('laporan.index') }}">Laporan</a>
-                </li>
+              @if (Auth::guard('admin')->user()->level == 'admin')
+              <li class="{{ Request::is('admin/dashboard') ? 'active' : '' }}">
+                  <a href="{{ route('dashboard.index') }}">Dashboard</a>
+              </li>
+              <li class="{{ Request::is('admin/pengaduan') ? 'active' : '' }}">
+                  <a href="{{ route('pengaduan.index') }}">Pengaduan</a>
+              </li>
+              <li class="{{ Request::is('admin/petugas') ? 'active' : '' }}">
+                  <a href="{{ route('petugas.index') }}">Petugas</a>
+              </li>
+              <li class="{{ Request::is('admin/masyarakat') ? 'active' : '' }}">
+                  <a href="{{ route('masyarakat.index') }}">Masyarakat</a>
+              </li>
+              <li class="{{ Request::is('admin/laporan') ? 'active' : '' }}">
+                  <a href="{{ route('laporan.index') }}">Laporan</a>
+              </li>
+              @elseif(Auth::guard('admin')->user()->level == 'petugas')
+              <li class="{{ Request::is('admin/dashboard') ? 'active' : '' }}">
+                  <a href="{{ route('dashboard.index') }}">Dashboard</a>
+              </li>
+              <li class="{{ Request::is('admin/pengaduan') ? 'active' : '' }}">
+                  <a href="{{ route('pengaduan.index') }}">Pengaduan</a>
+              </li>
+              @endif
             </ul>
         </nav>
 
