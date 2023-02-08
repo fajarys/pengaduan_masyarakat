@@ -151,7 +151,7 @@
                 @endif
                 @if ($v->tanggapan != null)
                 <div class="judul-laporan">
-                  <p class="mt-3 mb-1">{{ '*Tanggapan dari '. $v->tanggapan->petugas->nama_petugas }}</p>
+                  <p class="mt-3 mb-1 font-weight-bold">{{ 'Tanggapan dari : '. $v->tanggapan->petugas->nama_petugas }}</p>
                 </div>
                 <p class="light">{{ $v->tanggapan->tanggapan }}</p>
                 @endif
