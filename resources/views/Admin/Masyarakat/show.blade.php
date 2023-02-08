@@ -47,7 +47,7 @@
                                     <form action="{{ route('masyarakat.destroy', $masyarakat->nik) }}" method="POST">
                                         @csrf
                                         @method('DELETE')
-                                        <button type="submit" class="btn btn-danger" style="width: 100%" onclick="return confirm('APAKAH YAKIN?')">HAPUS</button>
+                                        <button type="submit" class="btn btn-danger" style="width: 100%" onclick="return confirm('Yakin Hapus Data?')">HAPUS</button>
                                     </form>
                                 </td>
                             </tr>
@@ -56,7 +56,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-lg-6 col-12">
+        <div class="col-lg-8 mx-auto mt-2">
             @if (Session::has('notif'))
                 <div class="alert alert-danger">
                     {{ Session::get('notif') }}
