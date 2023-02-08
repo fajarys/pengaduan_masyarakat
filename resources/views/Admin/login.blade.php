@@ -30,7 +30,7 @@
             <h4 class="text-center text-white mt-5">Pengaduan Masyarakat</h4>
             <div class="card mt-5">
                 <div class="card-body">
-                    <h3 class="text-center mb-3">Login Petugas</h3>
+                    <h3 class="text-center mb-3">Login Admin</h3>
                     <form action="{{ route('admin.login') }}" method="POST">
                         @csrf
                         <div class="form-group">

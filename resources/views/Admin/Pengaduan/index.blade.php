@@ -20,8 +20,8 @@
         </tr>
       </thead>
       <tbody>
+        @foreach ($pengaduan as $key => $val)
         <tr>
-          @foreach ($pengaduan as $key => $val)
               <td>{{ $key += 1 }}</td>
               <td>{{ $val->tgl_pengaduan->format('d-M-Y') }}</td>
               <td>{{ $val->isi_laporan }}</td>
@@ -35,8 +35,8 @@
                 @endif
               </td>
               <td><a href="{{ route('pengaduan.show' , $val->id_pengaduan ) }}" style="text-decoration: underline;">Lihat</a></td>
+            </tr>
           @endforeach
-        </tr>
       </tbody>
     </table>
 @endsection
