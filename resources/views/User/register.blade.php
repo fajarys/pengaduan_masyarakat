@@ -20,7 +20,7 @@
 @section('content')
 <div class="container">
     <div class="row justify-content-center">
-        <div class="col-lg-5">
+        <div class="col-lg-6">
             <h4 class="text-center text-white mt-5">Pengaduan Masyarakat</h4>
             <div class="card mt-5">
                 <div class="card-body">

@@ -11,13 +11,7 @@
   {{-- style css --}}
   <style>
     body {
-        background: #645CBB;
-    }
-
-    .btn-purple {
-        background: #645CBB;
-        width: 100%;
-        color: #fff;
+        background: #38E54D;
     }
 
 </style>
@@ -26,7 +20,7 @@
 <body>
   <div class="container">
     <div class="row justify-content-center">
-        <div class="col-lg-5">
+        <div class="col-lg-6">
             <h4 class="text-center text-white mt-5">Pengaduan Masyarakat</h4>
             <div class="card mt-5">
                 <div class="card-body">
@@ -39,7 +33,7 @@
                         <div class="form-group">
                             <input type="password" name="password" placeholder="Password" class="form-control">
                         </div>
-                        <button type="submit" class="btn btn-purple">Masuk</button>
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">Masuk</button>
                     </form>
                 </div>
             </div>
