@@ -80,7 +80,7 @@
                         rows="4">{{ old('isi_laporan') }}</textarea>
                 </div>
                 <div class="form-group">
-                    <input type="file" name="foto" class="form-control">
+                    <input type="file" name="foto" class="form-control-file">
                 </div>
                 <button type="submit" class="btn btn-custom mt-2">Kirim</button>
             </form>

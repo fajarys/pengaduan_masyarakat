@@ -129,9 +129,9 @@
                         @if ($v->status == '0')
                         <p class="text-danger">Pending</p>
                         @elseif($v->status == 'proses')
-                        <p class="text-warning">{{ ucwords($v->status) }}</p>
+                        <p class="text-warning font-italic">{{ ucwords($v->status) }}</p>
                         @else
-                        <p class="text-success">{{ ucwords($v->status) }}</p>
+                        <p class="text-success font-weight-bold">{{ ucwords($v->status) }}</p>
                         @endif
                     </div>
                     <div>

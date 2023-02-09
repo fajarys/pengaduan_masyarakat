@@ -21,7 +21,7 @@
     <h6>Laporan Pengaduan Masyarakat</h6>
 </div>
 <div class="container">
-    <table class="table">
+    <table class="table table table-striped">
         <thead>
             <tr>
                 <th>No</th>
@@ -42,7 +42,6 @@
         </tbody>
     </table>
 </div>
-
 
 </body>
 </html>
