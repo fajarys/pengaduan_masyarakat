@@ -20,10 +20,11 @@
     <h4>REKAP</h4>
     <h6>Laporan Pengaduan Masyarakat</h6>
 </div>
+<hr style="border-top: 5px double #8c8b8b;">
 <div class="container">
-    <table class="table table table-striped">
+    <table class="table table-striped">
         <thead>
-            <tr>
+            <tr class="text-center">
                 <th>No</th>
                 <th>Tanggal</th>
                 <th>Isi Laporan</th>
@@ -32,7 +33,7 @@
         </thead>
         <tbody>
             @foreach ($pengaduan as $key => $val)
-                <tr>
+                <tr class="text-center">
                     <td>{{ $key += 1 }}</td>
                     <td>{{ $val->tgl_pengaduan->format('d-M-Y') }}</td>
                     <td>{{ $val->isi_laporan }}</td>

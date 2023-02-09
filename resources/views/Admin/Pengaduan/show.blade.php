@@ -61,6 +61,9 @@
             <div class="text-center font-weight-bold">Tanggapan Masyarakat</div>
             </div>
             <div class="card-body">
+              @if (Session::has('status'))
+              <div class="alert alert-success mt-2">{{ Session::get('status') }}</div>
+              @endif
               <form action="{{ route('tanggapan.createOrUpdate') }}" method="POST">
                  @csrf
                  <input type="hidden" name="id_pengaduan" value="{{ $pengaduan->id_pengaduan }}">
@@ -90,9 +93,6 @@
                 <button type="submit" class="btn btn-primary" style="width: 100%;">Kirim</button>
                 </div>
               </form>
-              @if (Session::has('status'))
-                  <div class="alert alert-success mt-2">{{ Session::get('status') }}</div>
-              @endif
             </div>
           </div>
       </div>

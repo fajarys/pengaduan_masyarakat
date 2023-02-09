@@ -8,6 +8,8 @@
   integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
   <title>Login Petugas</title>
 
+  <link rel="website icon" type="png" href="{{ asset('images/laporan.png') }}">
+  
   {{-- style css --}}
   <style>
     body {

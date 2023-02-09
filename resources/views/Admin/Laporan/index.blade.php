@@ -8,7 +8,7 @@
     <div class="row">
         <div class="col-lg-8 mx-auto mb-4">
             <div class="card">
-                <div class="card-header">
+                <div class="card-header text-center font-weight-bold">
                     Cari Berdasarkan Tanggal
                 </div>
                 <div class="card-body">
@@ -33,13 +33,13 @@
                 Data Berdasarkan Tanggal
                 <div class="float-right">
                     @if ($pengaduan ?? '')
-                        <a href="{{ route('laporan.cetakLaporan', ['dari' => $dari, 'ke' => $ke]) }}" class="btn btn-secondary">EXPORT PDF</a>
+                        <a href="{{ route('laporan.cetakLaporan', ['dari' => $dari, 'ke' => $ke]) }}" class="btn btn-secondary">Cetak PDF</a>
                     @endif
                 </div>
             </div>
             <div class="card-body">
                 @if ($pengaduan ?? '')
-                    <table class="table">
+                    <table class="table table-striped">
                         <thead>
                             <tr>
                                 <th>No</th>
