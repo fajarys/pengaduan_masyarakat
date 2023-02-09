@@ -10,6 +10,13 @@
 
 @section('content')
     <div class="row">
+      <div class="col-lg-8 mx-auto mt-2">
+        @if (Session::has('notif'))
+            <div class="alert alert-danger">
+                {{ Session::get('notif') }}
+            </div>
+        @endif
+    </div>
         <div class="col-lg-8 mx-auto">
             <div class="card">
                 <div class="card-header">
@@ -55,13 +62,6 @@
                     </table>
                 </div>
             </div>
-        </div>
-        <div class="col-lg-8 mx-auto mt-2">
-            @if (Session::has('notif'))
-                <div class="alert alert-danger">
-                    {{ Session::get('notif') }}
-                </div>
-            @endif
         </div>
     </div>
 @endsection

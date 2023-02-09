@@ -11,6 +11,20 @@
 @section('content')
     <div class="row">
       <div class="col-lg-8 mx-auto">
+        @if (Session::has('notif'))
+            <div class="alert alert-danger text-center">
+                {{ Session::get('notif') }}
+            </div>
+        @endif
+        @if ($errors->any())
+            @foreach ($errors->all() as $error)
+            <div class="alert alert-danger text-center">
+                {{ $error }}
+            </div>
+            @endforeach
+        @endif
+    </div>
+      <div class="col-lg-8 mx-auto">
         <div class="card">
           <div class="card-header text-center font-weight-bold">
             Edit Petugas
@@ -54,7 +68,7 @@
             <form action="{{ route('petugas.destroy', $petugas->id_petugas)}}" method="POST">
               @csrf
               @method('DELETE')
-              <button type="submit" class="btn btn-danger mt-2" style="width: 100%;">HAPUS</button>
+              <button type="submit" class="btn btn-danger mt-2" style="width: 100%;" onclick="return confirm('Yakin Hapus?')">HAPUS</button>
             </form>
           </div>
         </div>
