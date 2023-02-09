@@ -33,6 +33,6 @@ class LaporanController extends Controller
             'pengaduan' => $pengaduan
         ]);
 
-        return $pdf->download('Rekap_laporan.pdf');
+        return $pdf->download('Rekap_Laporan.pdf');
     }
 }
