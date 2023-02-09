@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
 use App\Models\Petugas;
+use App\Models\Tanggapan;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
@@ -87,8 +88,14 @@ class PetugasController extends Controller
     {
         $petugas = Petugas::findOrFail($id_petugas);
 
-        $petugas->delete();
+        $tanggapan = Tanggapan::where('id_petugas', $id_petugas)->first();
 
-        return redirect()->route('petugas.index');
+        if (!$tanggapan) {
+            $petugas->delete();
+
+            return redirect()->route('petugas.index');
+        } else {
+            return redirect()->back()->with(['notif' => 'Tidak Bisa dihapus. Petugas Memiliki Hubungan']);
+        }
     }
 }

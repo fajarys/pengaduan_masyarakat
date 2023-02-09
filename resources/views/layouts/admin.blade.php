@@ -72,7 +72,7 @@
 
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="nav navbar-nav ml-auto">
-                            <a href="{{ route('admin.logout') }}" class="btn btn-white btn-sm">{{ Auth::guard('admin')->user()->nama_petugas }}</a>
+                            <a href="{{ route('admin.logout') }}" class="btn btn-white btn-sm" onclick="return confirm('Yakin Keluar')">{{ Auth::guard('admin')->user()->nama_petugas }}</a>
                         </ul>
                     </div>
                 </div>
