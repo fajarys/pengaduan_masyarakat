@@ -3,8 +3,7 @@
 @section('title','Tambah Petugas')
     
 @section('header')
-<a href="{{ route('petugas.index')}}" class="text-primary">Data Petugas</a>
-<a href="#" class="text-decoration-none">/</a>
+<a href="{{ route('petugas.index')}}" class="text-primary">Data Petugas</a> /
 <a href="#" class="text-decoration-none">Tambah Petugas</a>
 @endsection
 

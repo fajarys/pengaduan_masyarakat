@@ -3,8 +3,7 @@
 @section('title', 'Detail Masyarakat')
 
 @section('header')
-    <a href="{{ route('masyarakat.index') }}" class="text-primary">Data Masyarakat</a>
-    <a href="#" class="text-grey">/</a>
+    <a href="{{ route('masyarakat.index') }}" class="text-primary">Data Masyarakat</a> /
     <a href="#" class="text-grey">Detail Masyarakat</a>
 @endsection
 

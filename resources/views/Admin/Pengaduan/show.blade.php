@@ -3,8 +3,7 @@
 @section('title','Lihat Pengaduan')
     
 @section('header')
-<a href="{{ route('pengaduan.index')}}" class="text-primary">Data Pengdauan</a>
-<a href="#" class="text-decoration-none">/</a>
+<a href="{{ route('pengaduan.index')}}" class="text-primary">Data Pengdauan</a> /
 <a href="#" class="text-decoration-none">Lihat Pengaduan</a>
 @endsection
 
