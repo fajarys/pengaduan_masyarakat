@@ -79,6 +79,8 @@
                 </div>
                 @if (Auth::guard('masyarakat')->user())    
                 <button type="submit" class="btn btn-custom mt-2">Kirim</button>
+                @else
+                <button disabled="disabled" class="btn btn-secondary" style="width: 100%;">Login Untuk Laporan</button>
                 @endif
             </form>
         </div>
