@@ -79,7 +79,7 @@
         <div class="col-lg-4 col-md-12 col-sm-12 col-12 col">
             <div class="content content-bottom shadow">
                 <div>
-                    <img src="{{ asset('images/user_default.svg') }}" alt="user profile" class="photo">
+                    <img src="{{ asset('images/user.png') }}" alt="user profile" class="photo">
                     <div class="self-align">
                         <h5><a style="color: #6a70fc" href="#">{{ Auth::guard('masyarakat')->user()->nama }}</a></h5>
                         <p class="text-dark mt-2">{{ Auth::guard('masyarakat')->user()->username }}</p>
@@ -119,36 +119,36 @@
             </a>
             <hr>
         </div>
-        @foreach ($pengaduan as $k => $v)
+        @foreach ($pengaduan as $key => $val)
         <div class="col-lg-8">
             <div class="laporan-top">
-                <img src="{{ asset('images/user_default.svg') }}" alt="profile" class="profile">
+                <img src="{{ asset('images/user.png') }}" alt="profile" class="profile">
                 <div class="d-flex justify-content-between">
                     <div>
-                        <p>{{ $v->user->nama }}</p>
-                        @if ($v->status == '0')
+                        <p>{{ $val->user->nama }}</p>
+                        @if ($val->status == '0')
                         <p class="text-danger">Pending</p>
-                        @elseif($v->status == 'proses')
-                        <p class="text-warning font-italic">{{ ucwords($v->status) }}</p>
+                        @elseif($val->status == 'proses')
+                        <p class="text-warning font-italic">{{ ucwords($val->status) }}</p>
                         @else
-                        <p class="text-success font-weight-bold">{{ ucwords($v->status) }}</p>
+                        <p class="text-success font-weight-bold">{{ ucwords($val->status) }}</p>
                         @endif
                     </div>
                     <div>
-                        <p>{{ $v->tgl_pengaduan->format('d M, h:i') }}</p>
+                        <p>{{ $val->tgl_pengaduan->format('d M, h:i') }}</p>
                     </div>
                 </div>
             </div>
             <div class="laporan-mid">
-                <p class="text-capitalize font-weight-normal">{{ $v->isi_laporan }}</p>
+                <p class="text-capitalize font-weight-normal">{{ $val->isi_laporan }}</p>
             </div>
             <div class="laporan-bottom">
-                @if ($v->foto != null)
-                <img src="{{ Storage::url($v->foto) }}" alt="{{ 'Gambar '.$v->judul_laporan }}" class="gambar-lampiran">
+                @if ($val->foto != null)
+                <img src="{{ Storage::url($val->foto) }}" alt="{{ 'Gambar' }}" class="gambar-lampiran">
                 @endif
-                @if ($v->tanggapan != null)
-                  <p class="mt-3 mb-1 font-weight-bold">{{ 'Tanggapan dari : '. $v->tanggapan->petugas->nama_petugas }}</p>
-                <p class="light">{{ $v->tanggapan->tanggapan }}</p>
+                @if ($val->tanggapan != null)
+                  <p class="mt-3 mb-1 font-weight-bold">{{ 'Tanggapan dari : '. $val->tanggapan->petugas->nama_petugas }}</p>
+                <p class="light">{{ $val->tanggapan->tanggapan }}</p>
                 @endif
             </div>
             <hr>
