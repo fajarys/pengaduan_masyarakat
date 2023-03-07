@@ -29,7 +29,7 @@
             <tr>
               <th class="text-center">Foto</th>
               <th>:</th>
-              <td><img src="{{ Storage::url($pengaduan->foto) }}" alt="foto" class="embed-responsive">Foro Pengaduan</td>
+              <td><img src="{{ Storage::url($pengaduan->foto) }}" alt="foto" class="embed-responsive">Foto Pengaduan</td>
             </tr>
             <tr>
               <th class="text-center">Isi Laporan</th>
