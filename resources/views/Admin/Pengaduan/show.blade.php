@@ -75,11 +75,9 @@
                         <option value="proses">Proses</option>
                         <option value="selesai">Selesai</option>
                     @elseif ($pengaduan->status == 'proses')
-                        <option value="">Pending</option>
                         <option selected value="proses">Proses</option>
                         <option value="selesai">Selesai</option>
                     @else
-                        <option value="">Pending</option>
                         <option value="proses">Proses</option>
                         <option selected value="selesai">Selesai</option>
                     @endif
