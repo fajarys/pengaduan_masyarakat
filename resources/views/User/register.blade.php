@@ -5,13 +5,6 @@
     body {
         background: #38E54D;
     }
-
-    .btn-blue {
-        background: #2192FF;
-        width: 100%;
-        color: #fff;
-    }
-
 </style>
 @endsection
 
@@ -42,7 +35,7 @@
                         <div class="form-group">
                             <input type="number" name="telp" placeholder="No. Telp" class="form-control">
                         </div>
-                        <button type="submit" class="btn btn-blue">DAFTAR</button>
+                        <button type="submit" class="btn btn-primary" style="width:100%;">DAFTAR</button>
                     </form>
                 </div>
             </div>
