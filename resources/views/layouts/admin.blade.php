@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
         integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
 
-        @yield('css')
+    @yield('css')
     <link rel="stylesheet" href="{{ asset('css/admin.css') }}">
     <link rel="website icon" type="png" href="{{ asset('images/laporan.png') }}">
     
