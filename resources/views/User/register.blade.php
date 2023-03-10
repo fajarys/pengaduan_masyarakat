@@ -24,7 +24,7 @@
             <h4 class="text-center text-white mt-5">Pengaduan Masyarakat</h4>
             <div class="card mt-5">
                 <div class="card-body">
-                    <h3 class="text-center mb-3">Register Dulu</h3>
+                    <h3 class="text-center mb-3">DAFTAR Dulu</h3>
                     <form action="{{ route('pekat.register') }}" method="POST">
                         @csrf
                         <div class="form-group">
@@ -42,7 +42,7 @@
                         <div class="form-group">
                             <input type="number" name="telp" placeholder="No. Telp" class="form-control">
                         </div>
-                        <button type="submit" class="btn btn-blue">REGISTER</button>
+                        <button type="submit" class="btn btn-blue">DAFTAR</button>
                     </form>
                 </div>
             </div>
