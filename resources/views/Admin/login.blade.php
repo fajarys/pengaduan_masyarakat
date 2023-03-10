@@ -15,8 +15,7 @@
     body {
         background: #38E54D;
     }
-
-</style>
+  </style>
   {{-- end style --}}
 </head>
 <body>
