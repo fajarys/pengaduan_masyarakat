@@ -17,7 +17,7 @@
         </div>
       </div>
       <div class="col-md-3">
-        <div class="card bg-secondary text-white">
+        <div class="card bg-dark text-white">
           <div class="card-header text-center">Masyarakat</div>
           <div class="card-body">
             <div class="text-center">

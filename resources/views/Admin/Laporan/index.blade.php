@@ -52,7 +52,7 @@
                             @foreach ($pengaduan as $key => $val)
                                 <tr>
                                     <td>{{ $key += 1 }}</td>
-                                    <td>{{ $val->tgl_pengaduan }}</td>
+                                    <td>{{ $val->tgl_pengaduan->format('d-M-Y') }}</td>
                                     <td>{{ $val->isi_laporan }}</td>
                                     <td>
                                         @if ($val->status == '0')
