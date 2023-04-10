@@ -80,7 +80,8 @@ class UserController extends Controller
     {
         Auth::guard('masyarakat')->logout();
 
-        return redirect()->route('pekat.index');
+        // return redirect()->route('pekat.index');
+        return redirect()->back();
     }
 
     public function storePengaduan(Request $request)
@@ -102,8 +103,6 @@ class UserController extends Controller
         if ($request->file('foto')) {
             $data['foto'] = $request->file('foto')->store('assets/pengaduan', 'public');
         }
-
-        date_default_timezone_set('Asia/Bangkok');
 
         $pengaduan = Pengaduan::create([
             'tgl_pengaduan' => date('Y-m-d h:i:s'),
